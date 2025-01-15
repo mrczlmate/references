@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+body{
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-lg{
+    background-color: #af9352;
+    padding: 0 20px;
+}
+
+.header{
+    background-color: #3a3a39;
+    text-align: center;
+    color: white;
+}
+
+.footer{
+    background-color: #3a3a39;
+    text-align: center;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ff7730;
+    text-decoration: none;
+}
+
+h1{
+    color: #fcfafc;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Merriweather', serif;
+}
+
+h2{
+    color: #3a3a39;
+    font-weight: lighter;
+    font-family: 'Merriweather', serif;
+    padding-top: 0.5em;
+}
+
+.footer{
+    background-color: #3a3a39;
+    text-align: center;
+    color: white;
+}
+
+/*elerhetosegek oldal*/
+
+.narancsfeher{
+    background-color: #ff7730;
+    color: #fcfafc;
+    border: 3px solid #3a3a39;
+    padding: 10px;
+    text-align: justify;
+}
+
+iframe{
+    border: 3px solid black;
+}
+
+table{
+    background-color: #af9352;
+    border: 3px solid #fcfafc;
+    font-size: 130%;
+    width: 100%;
+}
+
+table tr td, table tr th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+td{
+    text-align: right;
+}
+
+th{
+    text-align: left;
+}
+
+.csapatkep{
+    border: 3px solid black;
+}
+
+/* Index oldal */
+
+.indexh3{
+    padding-top: 0.5em;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.szezonalis{
+    border: #D6C7A7 solid 0.5em;
+}
+
+.szezonpoz{
+    position: relative;
+    text-align: center;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+}
+
+.szezonalis:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.indeximg{
+    width: 100%;
+}
+
+.indexkiszelre{
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.indexpadding{
+    padding-bottom: 1em;
+}
+
+.szezonpoz div{
+    color: black;
+    position: absolute;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+    height: 83%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.szezonpoz:hover{
+    cursor: default;
+}
+
+.szezonpoz:hover div{
+    top: 0;
+    right: 0;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(214, 199, 167, 0.7);
+}
+
+.ajanlottcsoki{
+    background-color: #D6C7A7;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 20px;
+    border: #C3AD7D 5px solid;
+}
+
+.kepbaloldal{
+    float: left;
+    width: 30%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.kepjobboldal{
+    float: right;
+    width: 30%;
+    height: auto;
+    margin-left: 10px;
+}
+
+.indexbutton{
+    background-color: #FF7730;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.indexjobb{
+    float: right;
+}
+
+.indexbutton:hover{
+    background-color: rgba(255, 119, 48, 0.6);
+}
+
+/*museum oldal*/
+
+.cardmuseum {
+    max-width: 800px;
+    display: grid;
+    grid-template-rows: 320px 160px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:auto;
+    margin-top: 50px;
+}
+
+.card-image {
+    grid-area: image;
+}
+.card-text {
+    grid-area: text;
+}
+.card-stats {
+    grid-area: stats; 
+}
+
+.card-image-1 {
+    grid-area: image;  
+    background-image: url(../img/muzeumra2-min.png);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-image-2 {
+    grid-area: image;  
+    background-image: url(../img/muzeumra4-min.png);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-image-3 {
+    grid-area: image;  
+    background-image: url(../img/muzeumrautolso-min.jpeg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 25px;
+}
+.card-text .date {
+    color: #af9352;
+    font-size:13px;
+}
+.card-text p {
+    color: #af9352;
+    font-size:15px;
+    font-weight: 300;
+}
+.card-text h2 {
+    margin-top:0px;
+    font-size:28px;
+}
+
+.card-stats {
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background:#ff7730;
+}
+
+.card-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding:10px;
+}
+
+.card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.muzeum{
+    background-color: #FFF8DC;
+}
+
+/*webshop oldal*/
+
+.card img{   
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.btn-primary{
+    background-color: #FF7730;
+    border: none;
+    width: 100%;
+}
+
+.btn-primary:hover{
+    background-color: #c4602b;
+}
+
+.jobbra{
+    text-align: right;
+}
+
+.card-body .card-text{
+    margin: 0;
+    padding: 5px;
+}
+
+.card-body{
+    font-family: roboto;
+}
+
+.kartya{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    transition: 0.5s ease;
+    border-radius: 18px;
+}
