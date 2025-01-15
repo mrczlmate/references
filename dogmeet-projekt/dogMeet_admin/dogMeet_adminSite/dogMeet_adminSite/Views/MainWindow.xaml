@@ -1,0 +1,42 @@
+﻿<Window x:Class="dogMeet_adminSite.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dogMeet_adminSite.Views"
+        mc:Ignorable="d"
+        Title="Főoldal" Height="480" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="Bisque">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <DataGrid Grid.RowSpan="3" Grid.Column="1" Name="DatasDG" Margin="0,5,5,5"/>
+        <StackPanel Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Height="116">
+            <Label Content="Tábla adatainak megjelenítése:"/>
+            <ComboBox Margin="5,5,5,5" Name="TablesCB" SelectedItem="user"/>
+            <Button Content="Megjelenít" Margin="5,0,5,5" Click="ShowDatas_Click" Name="ShowDatasB"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Height="116">
+            <Label Content="Rekord törlése tábla adatai alapján"/>
+            <Label Content="Rekord Id-ja:" Margin="8,0,0,0"/>
+            <TextBox Name="DeleteByIdTB" Margin="5,0,5,0"/>
+            <Button Content="törlés" Margin="5,5,5,8" Name="DeleteByIdB" Click="DeleteByIdB_Click"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="0">
+            <Label Content="Adatok módosítása/felvétele:"/>
+            <Button Content="Új felhasználó felvétele" Margin="5,10,5,0" Click="NewOwner_Click"/>
+            <Button Content="Új kutya, meglévő felhasználóhoz" Margin="5,5,5,15" Click="NewDogForExistingUser_Click"/>
+            <Button Content="Gazda adatainak módosítása" Margin="5,0,5,5" Click="ModifyOwner_Click"/>
+            <Button Content="Lakcím adatok módosítása" Margin="5,0,5,5" Click="ModifyLocation_Click"/>
+            <Button Content="Kutya adatainak módosítása" Margin="5,0,5,5" Click="ModifyDog_Click"/>
+            <Button Content="Szaporítási előzmények módosítása" Click="Button_Click" Margin="5,0,5,0"/>
+        </StackPanel>
+    </Grid>
+</Window>

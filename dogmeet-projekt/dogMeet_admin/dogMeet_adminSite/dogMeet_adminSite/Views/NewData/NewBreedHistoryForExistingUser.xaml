@@ -1,0 +1,44 @@
+﻿<Window x:Class="dogMeet_adminSite.Views.NewData.NewBreedHistoryForExistingUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dogMeet_adminSite.Views.NewData"
+        mc:Ignorable="d"
+        Title="Szaporítási előzmény felvétele a már meglévő gazda új kutyájához" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="Bisque">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <DataGrid Grid.RowSpan="4" Grid.Column="1" Name="DatasDG" Margin="0,5,5,5"/>
+        <TextBlock TextWrapping="Wrap" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center">
+            Kutya szaporítási előzményeinek a szerkesztése
+        </TextBlock>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Label Content="Előzmény törlése Id alapján:" Margin="0,10,0,0"/>
+            <TextBox Name="DeleteByIdTB" PreviewTextInput="NumberValidationTextbox" Margin="5,0,5,0"/>
+            <Button Content="Törlés" Margin="5,6,5,4" Click="Delete_Click"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="0">
+            <Label Content="Új előzmény felvétele" HorizontalAlignment="Center"/>
+            <Label Content="Szülés dátuma:"/>
+            <DatePicker Name="dateDP" Margin="5,0,5,0"/>
+            <Label Content="Ilyen fajta kutyával szaporítva:"/>
+            <TextBox Name="breededwithtypeTB" Margin="5,0,5,0"/>
+            <Label Content="Kölyök született:"/>
+            <TextBox Name="kidsbornTB" PreviewTextInput="NumberValidationTextbox" Margin="5,0,5,0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="0">
+            <Button Content="Felvétel" Margin="5,5,5,5" Click="Add_Click"/>
+            <Button Content="Befejezés" Click="Finish_Click" Margin="5,0,5,0"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,62 @@
+﻿<Window x:Class="dogMeet_adminSite.Views.ModifyData.ModifyLocationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dogMeet_adminSite.Views.ModifyData"
+        mc:Ignorable="d"
+        Title="Lakcím módosítása" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="Bisque">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <DataGrid Grid.Column="3" Grid.RowSpan="7" Name="locationDataDG" Margin="0,5,5,5"/>
+        <Label Grid.Row="0" Grid.ColumnSpan="3" Content="Felhasználó lakcímének módosítása" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="3" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Content="Lakcím Id-je" VerticalAlignment="Center" Margin="0,0,8,0"/>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBox Name="addressidTB" PreviewTextInput="NumberValidationTextbox"/>
+                <Button Content="Adat betöltése" Margin="0,5,0,0" Padding="2,2,2,2" Click="LoadData_Click"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="3">
+            <Label Content="Ország:"/>
+            <TextBox Name="countryTB" Margin="5,0,5,0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="2">
+            <Label Content="Megye:"/>
+            <TextBox Margin="5,0,8,0" Name="stateTB"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="2">
+            <Label Content="Irányítószám::"/>
+            <TextBox Name="zipTB" PreviewTextInput="NumberValidationTextbox" Margin="0,0,5,0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.ColumnSpan="3">
+            <Label Content="Város:"/>
+            <TextBox Name="cityTB" Margin="5,0,5,0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.ColumnSpan="2">
+            <Label Content="Utca:"/>
+            <TextBox Margin="5,0,8,0" Name="streetTB"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="2">
+            <Label Content="Házszám:"/>
+            <TextBox Name="housenumberTB" PreviewTextInput="NumberValidationTextbox" Margin="0,0,5,0"/>
+        </StackPanel>
+        <Button Grid.Row="6" Grid.Column="0" Content="Mégse" Click="Back_Click" Margin="5,0,0,5"/>
+        <Button Grid.Row="6" Grid.Column="2" Content="Megerősítés" Click="Finish_Click" Name="ModifyB" IsEnabled="False" Margin="5,0,0,5"/>
+    </Grid>
+</Window>

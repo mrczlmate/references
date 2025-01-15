@@ -1,0 +1,47 @@
+﻿<Window x:Class="dogMeet_adminSite.Views.NewData.NewDogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dogMeet_adminSite.Views.NewData"
+        mc:Ignorable="d"
+        Title="Új kutya felvétele" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="Bisque">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.ColumnSpan="3" Content="Első kutya felvétele" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="3">
+            <Label Content="A kutya neve:"/>
+            <TextBox Name="nameTB" Margin="5,0,5,0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="3">
+            <Label Content="Fajtája:"/>
+            <TextBox Name="typeTB" Margin="5,0,5,0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="2">
+            <Label Content="Kora:"/>
+            <TextBox Margin="5,0,8,0" Name="ageTB" PreviewTextInput="NumberValidationTextbox"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="2">
+            <Label Content="Neme:"/>
+            <ComboBox Name="genderTB" SelectedItem="kan" Margin="0,0,5,0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.ColumnSpan="3">
+            <Label Content="Leírása:"/>
+            <TextBox AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" Height="35" Name="descriptionTB" Margin="5,0,5,0"/>
+        </StackPanel>
+        <Button Grid.Row="5" Grid.Column="2" Content="Következő" Click="BreedHistory_Click" Margin="0,0,5,5"/>
+    </Grid>
+</Window>

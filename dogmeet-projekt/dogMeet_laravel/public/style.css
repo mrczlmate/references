@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Slab:wght@200&display=swap');
+
+/* header */
+
+.headerStyle{
+    background-color: #4F4040;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0;
+}
+
+.logoImg{
+    position: absolute;
+    float: left;
+    margin-left: 0.5em;
+}
+
+@media screen and (max-width: 992px) {
+    .logoImg{
+    position: absolute;
+    float: left;
+    width: 6%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logoImg{
+        position: absolute;
+        float: left;
+        width: 9%;
+    }
+}
+
+.headerTitle{
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    border-bottom: 1px solid #C4C4C4;
+    padding: 0.4em;
+}
+
+/* navbar */
+
+.navbarStyle{
+    background-color: #4F4040;
+    margin-top: 0;
+    text-align: center;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.navbarImg{
+    padding-bottom: 0.4em;
+    padding-top: 0.4em;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+}
+
+.navbarItems{
+    display: flex;
+    justify-content: center;
+}
+
+.navbarText{
+    color: white;
+}
+
+.logoutStyle{
+    display: inline;
+    padding: 0;
+    margin-left: 1em;
+}
+
+.logoutImg{
+    padding-bottom: 0;
+}
+
+body{
+    background: radial-gradient(circle, #f7e4d7, #9b7653) fixed;
+}
+/* all page design */
+
+.containerStyle{
+    background-color: #4F4040;
+    border-left: 3px solid #333839;
+    border-right: 3px solid #333839;
+    padding: 5px 30px;
+    height: fit-content;
+    min-height: 96vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.brownBtn{
+    background-color: #9b7653;
+    padding: 5px 10px;
+    margin: 0 15px;
+}
+
+.brownBtn:hover{
+    background-color: #af8967;
+    padding: 5px 10px;
+    margin: 0 15px;
+    box-shadow: 1px 1px 3px 1px #2a2a2a;
+}
+
+.greenBtn{
+    background-color: #66BF51;
+    padding: 5px 10px;
+    margin: 0 15px;
+}
+
+.greenBtn:hover{
+    background-color: #7cd267;
+    padding: 5px 10px;
+    margin: 0 15px;
+    box-shadow: 1px 1px 3px 1px #2a2a2a;
+}
+
+.redBtn{
+    background-color: #F46262;
+    padding: 5px 10px;
+    margin: 0 15px;
+}
+
+.redBtn:hover{
+    background-color: #f87777;
+    padding: 5px 10px;
+    margin: 0 15px;
+    box-shadow: 1px 1px 3px 1px #2a2a2a;
+}
+
+.lightBg{
+    background-color: #DDD3D3;
+}
+
+label.white{
+    text-align: left;
+    color: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+}
+
+.backButton{
+    position: absolute;
+}
+
+@media screen and (max-width: 1200px) {
+    .backButton{
+        position: relative;
+        padding-bottom: 1em;
+    }
+}
+
+/*modals*/
+
+.modal-content{
+    background-color: #af8967;
+    font-family: 'Inter', sans-serif;
+}
+
+.modal-header{
+    border-bottom: none;
+}
+
+.modal-footer{
+    border-top: none;
+}
+
+/* profile */
+
+.profilePageTables{
+    color: #FFFFFF;
+    letter-spacing: 0.1em;
+}
+
+.profilePageTables tr th{
+    text-align: left;
+    font-weight: bold;
+    color: #af8967;
+}
+
+.profilePageTables tr td{
+    text-align: right;
+}
+
+.white{
+    color: #FFFFFF;
+}
+
+/* register login */
+
+form{
+    padding: 0 60px;
+}
+
+/* newDog,updateDog */
+
+h1.dog{
+    color: #FFFFFF;
+}
+
+.editTitle{
+    display: flex;
+    justify-content: center;
+}
+
+/* homepage */
+
+.dogCard{
+    background-color: #DDD3D3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #2a2a2a;
+}
+
+h2.nameType{
+    font-weight: bold;
+    border-bottom: 1px solid #2a2a2a;
+    padding-bottom: 0.4rem;
+}
+
+img.dogImg{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    box-shadow: 0 7px 29px 0 #2a2a2a;
+}
+
+.historyCard{
+    background-color: #DDD3D3;
+    padding: 10px;
+    box-shadow: 3px 3px 3px #2a2a2a;
+    border-radius: 10px;
+}
+
+.pHistory{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* friends */
+
+.friendStyle{
+    background-color: #DDD3D3;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+/* Footer */
+
+.footer{
+    background-color: #333839;
+    color: white;
+    text-align: center;
+    position: relative;
+    min-height: 4vh;
+    height: 1.5rem;
+}
+

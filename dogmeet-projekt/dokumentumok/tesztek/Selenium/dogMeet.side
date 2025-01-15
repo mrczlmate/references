@@ -1,0 +1,1791 @@
+{
+  "id": "c10916e2-f036-46ab-accd-f09165baa96f",
+  "version": "2.0",
+  "name": "dogMeet",
+  "url": "https://www.dogmeet.duckdns.org",
+  "tests": [{
+    "id": "87e6af4a-5ca8-4599-b00e-d3b1151a9d3d",
+    "name": "registration",
+    "commands": [{
+      "id": "57101b45-5d75-4bb0-9997-7292ec37e49e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85ce06e5-e106-44d6-9245-0c2b8ca3cff0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5f1a754-e12d-48bd-8827-ba43fed8f218",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Regisztráció",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4443822b-27ea-4ad1-b35e-d695231a23d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da54bb6f-0fd7-40ce-bba4-78ff258be77f",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "biro.balint"
+    }, {
+      "id": "51752d85-1a10-45a7-a142-ba25999de708",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be18ad79-7da9-4eb4-9494-1564b59407b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "biro.balint@gmail.com"
+    }, {
+      "id": "6cb8873a-884e-4563-bf8f-19504adf8f83",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "BiroDogMeet"
+    }, {
+      "id": "2b201510-4e8d-4669-bf13-e9bd1eb0d398",
+      "comment": "",
+      "command": "type",
+      "target": "id=password_confirmation",
+      "targets": [
+        ["id=password_confirmation", "id"],
+        ["name=password_confirmation", "name"],
+        ["css=#password_confirmation", "css:finder"],
+        ["xpath=//input[@id='password_confirmation']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "BiroDogMeet"
+    }, {
+      "id": "788b9824-2822-4ce5-81a2-257d27668673",
+      "comment": "",
+      "command": "click",
+      "target": "css=.my-2",
+      "targets": [
+        ["css=.my-2", "css:finder"],
+        ["xpath=//input[@value='Következő']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "695b7ab5-8bd8-454b-a417-7ef492586f87",
+      "comment": "",
+      "command": "click",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["name=lastName", "name"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34d10222-9513-4611-9afd-f5a3627617a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["name=lastName", "name"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Biró"
+    }, {
+      "id": "e385fb69-79a6-47a1-9528-5cee12fc393b",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Bálint"
+    }, {
+      "id": "f4b18eee-90bf-40f7-9b1f-4b29a321c82c",
+      "comment": "",
+      "command": "type",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["name=phoneNumber", "name"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "+36303121212"
+    }, {
+      "id": "7bdaacaa-c13e-41a6-8c6d-e685f2c1a131",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Következő']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6c4a98c-37dc-4bd8-a42a-d76b90e96a46",
+      "comment": "",
+      "command": "click",
+      "target": "id=country",
+      "targets": [
+        ["id=country", "id"],
+        ["name=country", "name"],
+        ["css=#country", "css:finder"],
+        ["xpath=//input[@id='country']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0f9343f-55ce-4b26-a0f3-5dfc61bf9e44",
+      "comment": "",
+      "command": "type",
+      "target": "id=country",
+      "targets": [
+        ["id=country", "id"],
+        ["name=country", "name"],
+        ["css=#country", "css:finder"],
+        ["xpath=//input[@id='country']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Magyarország"
+    }, {
+      "id": "759f2555-96e5-46e5-bbb0-bf8111354c9c",
+      "comment": "",
+      "command": "type",
+      "target": "id=city",
+      "targets": [
+        ["id=city", "id"],
+        ["name=city", "name"],
+        ["css=#city", "css:finder"],
+        ["xpath=//input[@id='city']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Budapest"
+    }, {
+      "id": "f1b7ff04-98d8-4c48-8e6c-d814f4326473",
+      "comment": "",
+      "command": "type",
+      "target": "id=zip",
+      "targets": [
+        ["id=zip", "id"],
+        ["name=zip", "name"],
+        ["css=#zip", "css:finder"],
+        ["xpath=//input[@id='zip']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1123"
+    }, {
+      "id": "5d5aae80-46b3-4998-a067-1913609c9964",
+      "comment": "",
+      "command": "type",
+      "target": "id=street",
+      "targets": [
+        ["id=street", "id"],
+        ["name=street", "name"],
+        ["css=#street", "css:finder"],
+        ["xpath=//input[@id='street']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Ó utca"
+    }, {
+      "id": "60da4d29-3f67-444a-b5aa-0420c3eb8c0c",
+      "comment": "",
+      "command": "type",
+      "target": "id=houseNumber",
+      "targets": [
+        ["id=houseNumber", "id"],
+        ["name=houseNumber", "name"],
+        ["css=#houseNumber", "css:finder"],
+        ["xpath=//input[@id='houseNumber']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "23"
+    }, {
+      "id": "f7b0ee0c-ad3f-4920-afbf-3268466bf0e3",
+      "comment": "",
+      "command": "click",
+      "target": "id=state",
+      "targets": [
+        ["id=state", "id"],
+        ["name=state", "name"],
+        ["css=#state", "css:finder"],
+        ["xpath=//input[@id='state']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d59c9f8f-0965-4941-88cc-632481293474",
+      "comment": "",
+      "command": "type",
+      "target": "id=state",
+      "targets": [
+        ["id=state", "id"],
+        ["name=state", "name"],
+        ["css=#state", "css:finder"],
+        ["xpath=//input[@id='state']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Pest"
+    }, {
+      "id": "2f9e1abc-87de-4c5b-b060-b45e1595ce97",
+      "comment": "",
+      "command": "click",
+      "target": "css=.offset-md-3",
+      "targets": [
+        ["css=.offset-md-3", "css:finder"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "265e80ec-3ea6-4eaa-8acd-7e9bb4966866",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Következő']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1ea03d8-b8c7-4e63-92b6-05756c36af6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "690f7ec0-a10d-4315-af9e-e3cad3ed1f47",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Jessy"
+    }, {
+      "id": "6b317b2c-6389-49e6-86e9-132d53bb319f",
+      "comment": "",
+      "command": "click",
+      "target": "id=gender",
+      "targets": [
+        ["id=gender", "id"],
+        ["name=gender", "name"],
+        ["css=#gender", "css:finder"],
+        ["xpath=//select[@id='gender']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39ad3cfb-1b08-4649-87d4-1a2b4d3141f6",
+      "comment": "",
+      "command": "select",
+      "target": "id=gender",
+      "targets": [],
+      "value": "label=szuka"
+    }, {
+      "id": "eefe72ce-8c3b-4fd7-8043-fbf31cf11609",
+      "comment": "",
+      "command": "click",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["name=age", "name"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79a6d6b3-9796-4b2b-9d8f-f4426092912c",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["name=age", "name"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "ee7644c2-6a2c-4160-bb57-056f11704cc5",
+      "comment": "",
+      "command": "click",
+      "target": "id=type",
+      "targets": [
+        ["id=type", "id"],
+        ["name=type", "name"],
+        ["css=#type", "css:finder"],
+        ["xpath=//input[@id='type']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2520c502-075b-4b0a-bd4f-30c56121d1ca",
+      "comment": "",
+      "command": "type",
+      "target": "id=type",
+      "targets": [
+        ["id=type", "id"],
+        ["name=type", "name"],
+        ["css=#type", "css:finder"],
+        ["xpath=//input[@id='type']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Bishon hawanese"
+    }, {
+      "id": "f9a9629d-62da-4ac6-96f2-fbe51a6a3ffb",
+      "comment": "",
+      "command": "click",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["name=description", "name"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7e107cb-c97e-4f56-b2a4-3973b1e66882",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["name=description", "name"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Szürke fehér foltos, 4kg kiskutya vagyok. Szeretem megugatni az idegeneket."
+    }, {
+      "id": "771d88fa-5515-46dc-af4f-efc3cf4d4004",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Befejezés']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a4dc4731-35c2-478f-a7bb-c69d70855b17",
+    "name": "newdogpage",
+    "commands": [{
+      "id": "32a14f10-e8ba-4aa4-be59-9d606836666c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0608e61-bcac-4b78-b280-0d44747c0162",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bb9a7cc-a93c-4759-9eae-d284fdc39a11",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d04fbf5a-aaca-430e-8396-093c2399f951",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "merczel259@gmail.com"
+    }, {
+      "id": "e2ef7342-c7e8-42a2-a403-df81ec5169ee",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8fad0c9-6eb8-4dc6-bdab-4e6f1dd5c1cf",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "MerczelDogMeet"
+    }, {
+      "id": "7303d21e-5a1b-4975-9b25-634e68ec44d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Bejelentkezés']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7df802de-0844-4bf3-aca5-8c4ba6fe1a7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbarImg:nth-child(4) img",
+      "targets": [
+        ["css=.navbarImg:nth-child(4) img", "css:finder"],
+        ["xpath=//img[@title='Saját kutyáim']", "xpath:img"],
+        ["xpath=//div[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec308c9e-3b81-428a-82b1-c5bb62b2a587",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Új kutya felvétele",
+      "targets": [
+        ["linkText=Új kutya felvétele", "linkText"],
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://www.dogmeet.duckdns.org/newdog')]", "xpath:href"],
+        ["xpath=//body/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Új kutya felvétele')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2353a89d-e916-4748-b86b-e470f18f4344",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a0054dd-1054-422b-adb3-5e035f34755a",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Béla"
+    }, {
+      "id": "abf230af-1bf5-47ba-b9cd-d62f10b1a803",
+      "comment": "",
+      "command": "click",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["name=age", "name"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27e10621-32be-47b4-8410-df4ae9ab2386",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["name=age", "name"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "4b5d2429-885e-4d1a-a091-b21fd3e09cf4",
+      "comment": "",
+      "command": "click",
+      "target": "id=type",
+      "targets": [
+        ["id=type", "id"],
+        ["name=type", "name"],
+        ["css=#type", "css:finder"],
+        ["xpath=//input[@id='type']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45fbdd97-1719-44d5-9b01-04fa5038a7a2",
+      "comment": "",
+      "command": "type",
+      "target": "id=type",
+      "targets": [
+        ["id=type", "id"],
+        ["name=type", "name"],
+        ["css=#type", "css:finder"],
+        ["xpath=//input[@id='type']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Rotweiler"
+    }, {
+      "id": "48c461bf-5cdb-4a67-9167-ea15a33984f5",
+      "comment": "",
+      "command": "click",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["name=description", "name"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e069057f-0165-4cc1-8933-8e70e28a4169",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["name=description", "name"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Fajtiszta fekete, vágott farku kutya."
+    }, {
+      "id": "b535703e-28c0-40d5-b61b-8ed3e95a6660",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Hozzáadás']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7c94dd4b-3a7f-427b-9c72-463f866a2f05",
+    "name": "deletedog",
+    "commands": [{
+      "id": "aa4eff4c-3206-434f-8575-fd1651fc27a3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3e09e3d-a789-499c-98e8-712eb6fabc6c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc4847b6-6195-4884-9835-f4bf8e703efd",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f4d3baa-edf9-4a9e-801a-8abd6c7a7b3a",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "merczel259@gmail.com"
+    }, {
+      "id": "2a017adb-d977-475a-b044-f1dc03737514",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12a634b4-009a-4112-b151-cab85c880b0c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "MerczelDogMeet"
+    }, {
+      "id": "a153ff3b-49ff-47aa-9684-f07ee5da1f18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Bejelentkezés']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26e9ddab-466a-4624-a31c-108c0ac36ca2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbarImg:nth-child(4) .navbarText",
+      "targets": [
+        ["css=.navbarImg:nth-child(4) .navbarText", "css:finder"],
+        ["xpath=//div[4]/a/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Kutyáim')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4673100-d846-4b6c-abc3-a8ecba3d96f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-10:nth-child(3) #deleteDog",
+      "targets": [
+        ["css=.col-10:nth-child(3) #deleteDog", "css:finder"],
+        ["xpath=(//button[@id='deleteDog'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='dogs']/div[3]/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[5]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba23c253-2bd4-49ee-8dcc-f8659dab4780",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-75",
+      "targets": [
+        ["css=.w-75", "css:finder"],
+        ["xpath=//div[@id='ModalBody']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Biztos törlöm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "462add06-d97d-42e8-80e3-4ca4d707061c",
+    "name": "editdog-data",
+    "commands": [{
+      "id": "89610caa-5723-4954-8493-447119f7d14e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0990150-70f2-4cd7-8ab3-fe86aef79cb5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24b99322-9dd0-4539-ba7c-e44232ff23ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2489dcf-2c30-4c57-8f2d-3b3aec22e9f6",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "merczel259@gmail.com"
+    }, {
+      "id": "51d33f9f-70db-4c3c-83ae-3ae77186aa88",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f2e52c8-b502-4a5b-9be5-4fb835187b78",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "MerczelDogMeet"
+    }, {
+      "id": "f6f2cccb-5708-4a78-b2c4-0b57a6fb833c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Bejelentkezés']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d0181de-4973-4a54-a85f-18a8de753825",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbarImg:nth-child(4) .navbarText",
+      "targets": [
+        ["css=.navbarImg:nth-child(4) .navbarText", "css:finder"],
+        ["xpath=//div[4]/a/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Kutyáim')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4dee4a94-d36b-4096-843c-876ca984dfdf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-10:nth-child(2) #editDog",
+      "targets": [
+        ["css=.col-10:nth-child(2) #editDog", "css:finder"],
+        ["xpath=(//a[contains(text(),'Kutya adatainak szerkesztése')])[2]", "xpath:link"],
+        ["xpath=(//a[@id='editDog'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='dogs']/div[2]/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://dogmeet.duckdns.org/editdog/6')]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9d7dce5-710a-44d9-a285-b01aa1d0887a",
+      "comment": "",
+      "command": "click",
+      "target": "id=type",
+      "targets": [
+        ["id=type", "id"],
+        ["name=type", "name"],
+        ["css=#type", "css:finder"],
+        ["xpath=//input[@id='type']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c0cec66-aedf-4245-a63f-8c22408b566f",
+      "comment": "",
+      "command": "click",
+      "target": "id=type",
+      "targets": [
+        ["id=type", "id"],
+        ["name=type", "name"],
+        ["css=#type", "css:finder"],
+        ["xpath=//input[@id='type']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11ce8f0f-e7e6-4d03-bd69-eb82d2d705a0",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=type",
+      "targets": [
+        ["id=type", "id"],
+        ["name=type", "name"],
+        ["css=#type", "css:finder"],
+        ["xpath=//input[@id='type']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84886566-5e3b-4836-8859-b6756a3f808f",
+      "comment": "",
+      "command": "type",
+      "target": "id=type",
+      "targets": [
+        ["id=type", "id"],
+        ["name=type", "name"],
+        ["css=#type", "css:finder"],
+        ["xpath=//input[@id='type']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Csivava"
+    }, {
+      "id": "22bbc915-f228-4283-a77c-581095c1e6f0",
+      "comment": "",
+      "command": "click",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["name=age", "name"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef67c200-5ada-4f88-969b-e0683b94e195",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["name=age", "name"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "8"
+    }, {
+      "id": "ff008769-5be5-474e-8593-88f2f80bd387",
+      "comment": "",
+      "command": "click",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["name=description", "name"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e9e6c4f-a85a-4c4e-9d34-b126d3a5c6e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["name=description", "name"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Fajtiszta fekete, vágott farku kutya. Lustálkodom általában és szeretek ugatni."
+    }, {
+      "id": "a469f61b-dbf2-4da8-9e32-356520b6205e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Szerkeszt']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "819b2a0e-fb07-42a9-8525-e719bca54379",
+    "name": "addfriends",
+    "commands": [{
+      "id": "3b7e4281-3c88-4517-aa2b-d302ba2ed9e8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d83a61e9-f5fc-40a0-bfd2-74c13ea5339e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a683218-f9d7-4abd-bdd4-364379a5ec97",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71d0c5fd-a626-4cf0-bb1c-e4e3e4772ac8",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "merczel259@gmail.com"
+    }, {
+      "id": "8aa3608c-f4c2-48cf-ad04-1eca30250626",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17d60407-60f8-4cdd-af1f-1447360b1c64",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "MerczelDogMeet"
+    }, {
+      "id": "f3a921ab-687d-4764-9d26-c1d7db7104f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Bejelentkezés']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "728f8720-e741-4b78-919d-3df3673dca26",
+      "comment": "",
+      "command": "click",
+      "target": "id=ownerBtn",
+      "targets": [
+        ["id=ownerBtn", "id"],
+        ["css=.col-10:nth-child(1) #ownerBtn", "css:finder"],
+        ["xpath=//button[@id='ownerBtn']", "xpath:attributes"],
+        ["xpath=//div[@id='dogs']/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Kapcsolat felvétele a gazdával')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fe83f71-f849-4c87-b7bb-2242ee49c321",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=ownerBtn",
+      "targets": [
+        ["id=ownerBtn", "id"],
+        ["css=.col-10:nth-child(1) #ownerBtn", "css:finder"],
+        ["xpath=//button[@id='ownerBtn']", "xpath:attributes"],
+        ["xpath=//div[@id='dogs']/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Kapcsolat felvétele a gazdával')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c61d64a-7bce-4cf8-a5cc-385b256cc40f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=ownerBtn",
+      "targets": [
+        ["id=ownerBtn", "id"],
+        ["css=.col-10:nth-child(1) #ownerBtn", "css:finder"],
+        ["xpath=//button[@id='ownerBtn']", "xpath:attributes"],
+        ["xpath=//div[@id='dogs']/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Kapcsolat felvétele a gazdával')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42c6e1ed-2d46-4dc4-93df-44f3753f4272",
+      "comment": "",
+      "command": "click",
+      "target": "css=.greenBtn",
+      "targets": [
+        ["css=.greenBtn", "css:finder"],
+        ["xpath=//div[@id='ModalBody']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Kapcsolatokba mentése')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2cb24f3-8b88-4315-845c-d8b1660a9470",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Mostantól Nagy Alabárd elmentette a kacsolatok.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a4d2af4-e8c6-4623-9ee1-d97f1a5477ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-10:nth-child(2) #ownerBtn",
+      "targets": [
+        ["css=.col-10:nth-child(2) #ownerBtn", "css:finder"],
+        ["xpath=(//button[@id='ownerBtn'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='dogs']/div[2]/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce19c83f-8ebd-472a-acad-61bcb97d1d48",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.col-10:nth-child(2) #ownerBtn",
+      "targets": [
+        ["css=.col-10:nth-child(2) #ownerBtn", "css:finder"],
+        ["xpath=(//button[@id='ownerBtn'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='dogs']/div[2]/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56ad20fb-8d58-430d-8eb7-49b5b503db8b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.col-10:nth-child(2) #ownerBtn",
+      "targets": [
+        ["css=.col-10:nth-child(2) #ownerBtn", "css:finder"],
+        ["xpath=(//button[@id='ownerBtn'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='dogs']/div[2]/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2baa765b-5cec-4a30-8507-b4541d86a2e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.greenBtn",
+      "targets": [
+        ["css=.greenBtn", "css:finder"],
+        ["xpath=//div[@id='ModalBody']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Kapcsolatokba mentése')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c7092ed-377a-4085-8c52-56af3917a402",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Mostantól Bajor Ádám elmentette a kacsolatok.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32a8cf9b-7898-4f6a-8a62-5fe55e055df0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-10:nth-child(5) #ownerBtn",
+      "targets": [
+        ["css=.col-10:nth-child(5) #ownerBtn", "css:finder"],
+        ["xpath=(//button[@id='ownerBtn'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='dogs']/div[5]/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b50591e-ecb6-4f66-9ada-cac954e8c5dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.greenBtn",
+      "targets": [
+        ["css=.greenBtn", "css:finder"],
+        ["xpath=//div[@id='ModalBody']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Kapcsolatokba mentése')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68169f73-e7b6-44cf-b311-434b74ce507f",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Mostantól Biró Bálint elmentette a kacsolatok.",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "76d8148f-08a8-4a6d-b3a0-e4cfecfd3ab1",
+    "name": "show-friends-data",
+    "commands": [{
+      "id": "96bc43ca-fa86-456e-94b0-31117e9a7cc6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "982db695-437e-4542-9d39-2294d518c7d7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "329394ac-0c12-4529-94c4-f72508a03718",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfe80d84-96b1-4dff-8b59-38d0df2f81c1",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "merczel259@gmail.com"
+    }, {
+      "id": "750fb614-1e6c-4846-bbde-2f4bacb746ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7afbee18-99ea-49d5-ba57-f671ba7e42ee",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "MerczelDogMeet"
+    }, {
+      "id": "5a5b54d8-b560-44e4-8692-4d362e32996e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Bejelentkezés']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac86bbb4-9a08-427b-b26c-aa5ff67f1da4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbarImg:nth-child(3) img",
+      "targets": [
+        ["css=.navbarImg:nth-child(3) img", "css:finder"],
+        ["xpath=//img[@title='Barátok']", "xpath:img"],
+        ["xpath=//div[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5336db53-d65c-4dc1-9f34-4cb2287b1bdd",
+      "comment": "",
+      "command": "click",
+      "target": "id=more",
+      "targets": [
+        ["id=more", "id"],
+        ["css=.col-10:nth-child(1) #more", "css:finder"],
+        ["xpath=//button[@id='more']", "xpath:attributes"],
+        ["xpath=//div[@id='friends']/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Részletek')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09b797c5-cf03-4097-880a-21dc257d1e5d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=more",
+      "targets": [
+        ["id=more", "id"],
+        ["css=.col-10:nth-child(1) #more", "css:finder"],
+        ["xpath=//button[@id='more']", "xpath:attributes"],
+        ["xpath=//div[@id='friends']/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Részletek')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c96b32df-5eb1-446e-b539-a560f79ffd5e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=more",
+      "targets": [
+        ["id=more", "id"],
+        ["css=.col-10:nth-child(1) #more", "css:finder"],
+        ["xpath=//button[@id='more']", "xpath:attributes"],
+        ["xpath=//div[@id='friends']/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Részletek')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f0baa1e-7362-475b-b2fc-8244b52e696a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.greenBtn",
+      "targets": [
+        ["css=.greenBtn", "css:finder"],
+        ["xpath=//div[@id='ModalBody']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Barát kutyái')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "668ce644-fac4-4710-ab73-a70a490e42e6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.greenBtn",
+      "targets": [
+        ["css=.greenBtn", "css:finder"],
+        ["xpath=//div[@id='ModalBody']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Barát kutyái')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f625851-319f-4693-ac80-83847b1b69fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.redBtn:nth-child(1)",
+      "targets": [
+        ["css=.redBtn:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='Modal']/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Vissza')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ef77464-f1f0-4960-bf74-d7274cfab804",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-10:nth-child(3) #more",
+      "targets": [
+        ["css=.col-10:nth-child(3) #more", "css:finder"],
+        ["xpath=(//button[@id='more'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='friends']/div[3]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23ee9b80-0daf-430c-b120-32c49a335a73",
+      "comment": "",
+      "command": "click",
+      "target": "css=.greenBtn",
+      "targets": [
+        ["css=.greenBtn", "css:finder"],
+        ["xpath=//div[@id='ModalBody']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Barát kutyái')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "793620a0-443e-48a7-a768-562ffcaabed0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.greenBtn",
+      "targets": [
+        ["css=.greenBtn", "css:finder"],
+        ["xpath=//div[@id='ModalBody']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Barát kutyái')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b183a7fe-5818-4fcf-a447-44e1cea787be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.redBtn:nth-child(1)",
+      "targets": [
+        ["css=.redBtn:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='Modal']/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Vissza')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ada3b76-837a-4b89-bc0e-03361ac88e09",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-10:nth-child(2) #more",
+      "targets": [
+        ["css=.col-10:nth-child(2) #more", "css:finder"],
+        ["xpath=(//button[@id='more'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='friends']/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e53ed33-df7c-43f8-b6d1-5e43787baa68",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.col-10:nth-child(2) #more",
+      "targets": [
+        ["css=.col-10:nth-child(2) #more", "css:finder"],
+        ["xpath=(//button[@id='more'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='friends']/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a89673f-fbac-442f-9e16-36d0de288956",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.col-10:nth-child(2) #more",
+      "targets": [
+        ["css=.col-10:nth-child(2) #more", "css:finder"],
+        ["xpath=(//button[@id='more'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='friends']/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87364c35-9f1c-45cd-bfa9-7b93d17388dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.greenBtn",
+      "targets": [
+        ["css=.greenBtn", "css:finder"],
+        ["xpath=//div[@id='ModalBody']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Barát kutyái')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a749bf6-09bf-4c12-a08c-9621b0694517",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.greenBtn",
+      "targets": [
+        ["css=.greenBtn", "css:finder"],
+        ["xpath=//div[@id='ModalBody']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Barát kutyái')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e47bc84-d417-4406-8a10-15074565a24a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.redBtn:nth-child(1)",
+      "targets": [
+        ["css=.redBtn:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='Modal']/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Vissza')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "644c26fd-7ea4-41ed-b62b-8e2b049ad336",
+    "name": "delete-friends",
+    "commands": [{
+      "id": "2a94f4e8-d592-4961-b4c0-95a40695b3f0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6afb73b3-ffae-439a-8b21-d02781fa83ad",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3713264-004f-440e-987d-899449f68919",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d860fa48-c67a-4fad-925f-6844de0f1323",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "merczel259@gmail.com"
+    }, {
+      "id": "f741e61d-1e6f-49ef-aeec-7730fb92bff5",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58a2ce88-fbfc-4058-b55b-158cffdeb4da",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "MerczelDogMeet"
+    }, {
+      "id": "893715e8-85b3-4092-8b7f-ce8aa8829a68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Bejelentkezés']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36d40ec2-d60c-4ee4-8dae-baf650b4c8e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbarImg:nth-child(3) img",
+      "targets": [
+        ["css=.navbarImg:nth-child(3) img", "css:finder"],
+        ["xpath=//img[@title='Barátok']", "xpath:img"],
+        ["xpath=//div[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8eb45b56-99ff-42fb-a9f9-c88515db02d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-10:nth-child(3) #deleteFriend",
+      "targets": [
+        ["css=.col-10:nth-child(3) #deleteFriend", "css:finder"],
+        ["xpath=(//button[@id='deleteFriend'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='friends']/div[3]/div/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1822f568-86dd-4f1c-8416-5d9f240af43f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.col-10:nth-child(3) #deleteFriend",
+      "targets": [
+        ["css=.col-10:nth-child(3) #deleteFriend", "css:finder"],
+        ["xpath=(//button[@id='deleteFriend'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='friends']/div[3]/div/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac7f1994-065c-4115-8fc5-7d791c594c3d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.col-10:nth-child(3) #deleteFriend",
+      "targets": [
+        ["css=.col-10:nth-child(3) #deleteFriend", "css:finder"],
+        ["xpath=(//button[@id='deleteFriend'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='friends']/div[3]/div/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c955818-520a-4f80-b8e3-923d667e5ccc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.greenBtn",
+      "targets": [
+        ["css=.greenBtn", "css:finder"],
+        ["xpath=//div[@id='ModalBody']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Biztosan törlöm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e9f0b38-dbc4-4b01-afdd-b76ea1c8d147",
+      "comment": "",
+      "command": "click",
+      "target": "id=deleteFriend",
+      "targets": [
+        ["id=deleteFriend", "id"],
+        ["css=.col-10:nth-child(1) #deleteFriend", "css:finder"],
+        ["xpath=//button[@id='deleteFriend']", "xpath:attributes"],
+        ["xpath=//div[@id='friends']/div/div/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Törlés')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2a90118-e2d6-46c0-8e8a-a8ae8a70dac5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.greenBtn",
+      "targets": [
+        ["css=.greenBtn", "css:finder"],
+        ["xpath=//div[@id='ModalBody']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Biztosan törlöm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f7f6eaef-76cc-40a8-8d9c-ca5d36c43be4",
+    "name": "login-logout",
+    "commands": [{
+      "id": "6617e08f-c33a-4f89-80d8-c94e9175e0b4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68a44899-33ce-4bfe-bb75-43be31fbbfec",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "340979fb-d089-4877-8220-439bf78ee676",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "856e796f-3ac8-4a3e-91f8-edf4ff388868",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "merczel259@gmail.com"
+    }, {
+      "id": "3a5eb0e3-51a7-4fcb-9e4b-3038f801684f",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5c47af4-6163-4ab2-8b70-b9d1c94e0d4c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "MerczelDogMeet"
+    }, {
+      "id": "ba5debf4-ce17-464c-a755-538b167d68aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Bejelentkezés']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2a39c59-c48c-46ad-8c23-6641542d5650",
+      "comment": "",
+      "command": "click",
+      "target": "css=#logout > img",
+      "targets": [
+        ["css=#logout > img", "css:finder"],
+        ["xpath=//img[@title='Kilépés']", "xpath:img"],
+        ["xpath=//button[@id='logout']/img", "xpath:idRelative"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "51ee45fd-6961-4004-9b6f-2580e239ac96",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["87e6af4a-5ca8-4599-b00e-d3b1151a9d3d"]
+  }],
+  "urls": ["https://www.dogmeet.duckdns.org/"],
+  "plugins": []
+}
