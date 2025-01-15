@@ -1,0 +1,33 @@
+﻿<Window x:Class="Admin_BMB_webshopProjekt.View.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Admin_BMB_webshopProjekt.View"
+        mc:Ignorable="d"
+        Title="BMB webshop Admin" Height="480" Width="830" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
+    <StackPanel Orientation="Horizontal">
+        <StackPanel Width="200">
+            <StackPanel>
+                <Label Content="Tábla adatok Megjelenítése:" FontSize="14" FontWeight="Bold" FontStyle="Italic" FontFamily="Candara" Margin="0,10,0,0"/>
+                <ComboBox x:Name="cb_tablamutat" Width="150" Margin="0,10,0,0"/>
+                <Button x:Name="btn_megjelenit" Click="tablamegjelenit_click" Content="Megjelenít" FontFamily="Candara" Background="White" BorderBrush="White" Width="147" Margin="0,10,0,10"/>
+            </StackPanel>
+            <StackPanel Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}">
+                <Label Content="Adat törlése:" FontSize="14" FontWeight="Bold" FontStyle="Italic" FontFamily="Candara" Margin="0,10,0,0"/>
+                <Label Content="Melyik táblából:"/>
+                <ComboBox x:Name="cb_tablatorles" Width="150" Margin="0,10,0,10"/>
+                <Label Content="Melyik adat: (ID alapján)"/>
+                <TextBox x:Name="tb_idtorles" TextWrapping="Wrap" Width="150" Margin="0,10,0,0"/>
+                <Button x:Name="btn_torles" Click="torles_click" Content="Törlés" FontFamily="Candara" Background="#FFABABAB" BorderBrush="#FFABABAB" Width="147" Margin="0,10,0,10"/>
+            </StackPanel>
+            <Button x:Name="btn_adatmodositas" Click="modositas_click" Content="Adat módosítás" FontFamily="Candara" Background="White" BorderBrush="White" Width="147" Margin="0,30,0,0"/>
+            <Button x:Name="btn_ujadat" Click="ujadat_click" Content="Új adat felvétele" FontFamily="Candara" Background="White" BorderBrush="White" Width="147" Margin="0,30,0,0"/>
+
+        </StackPanel>
+        <StackPanel Width="600">
+            <DataGrid x:Name="dg_tables" HorizontalAlignment="Stretch" Height="435"/>
+
+        </StackPanel>
+    </StackPanel>
+</Window>

@@ -1,0 +1,73 @@
+﻿<Window x:Class="Admin_BMB_webshopProjekt.View.UpdateDataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Admin_BMB_webshopProjekt.View"
+        mc:Ignorable="d"
+        Title="BMB webshop Admin | adat módosítása" Height="480" Width="730" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
+    <StackPanel Orientation="Horizontal">
+        <StackPanel Width="200" Margin="50,0,0,0">
+            <Label Content="Termék" FontSize="14" FontWeight="Bold" FontStyle="Italic" FontFamily="Candara" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Melyik termék ID:" Margin="10,0,10,0"/>
+                <TextBox x:Name="tb_melyiktermekid" TextWrapping="Wrap" Width="150" Margin="0,5,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Név:" Margin="10,0,10,0"/>
+                <TextBox x:Name="tb_termeknev" TextWrapping="Wrap" Width="150" Margin="0,5,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Leírás:" Margin="10,0,10,0"/>
+                <TextBox x:Name="tb_leiras" TextWrapping="Wrap" Width="150" Margin="0,5,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Ár:" Margin="10,0,10,0"/>
+                <TextBox x:Name="tb_ar" TextWrapping="Wrap" Width="150" Margin="0,5,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Mennyiség:" Margin="10,0,10,0"/>
+                <TextBox x:Name="tb_mennyiseg" TextWrapping="Wrap" Width="150" Margin="0,5,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Kategória ID:" Margin="10,0,10,0"/>
+                <TextBox x:Name="tb_termek_katid" TextWrapping="Wrap" Width="150" Margin="0,5,0,0"/>
+            </StackPanel>
+            <Button Content="Módosítás" Click="termek_modosit_click" Width="150" Margin="0,30,0,0" FontFamily="Candara" Background="White" BorderBrush="White"/>
+        </StackPanel>
+        <StackPanel Width="200" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}">
+            <Label Content="Kategória" FontSize="14" FontWeight="Bold" FontStyle="Italic" FontFamily="Candara" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Melyik kategória ID:" Margin="10,0,10,0"/>
+                <TextBox x:Name="tb_melyikkategoriaid" TextWrapping="Wrap" Width="150" Margin="0,5,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Megnevezése:" Margin="10,0,10,0"/>
+                <TextBox x:Name="tb_kat_megnevezes" TextWrapping="Wrap" Width="150" Margin="0,5,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Szülő kategória ID:" Margin="10,0,10,0"/>
+                <TextBox x:Name="tb_szulokatid" TextWrapping="Wrap" Width="150" Margin="0,5,0,0"/>
+            </StackPanel>
+            <Button Content="Módosítás" Click="kategoria_modosit_click" Width="150" Margin="0,30,0,0" FontFamily="Candara" Background="#FFABABAB" BorderBrush="#FFABABAB"/>
+        </StackPanel>
+        <StackPanel Width="200" Margin="0,0,50,0">
+            <Label Content="Kép" FontSize="14" FontWeight="Bold" FontStyle="Italic" FontFamily="Candara" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Melyik kép ID:" Margin="10,0,10,0"/>
+                <TextBox x:Name="tb_melyikkepid" TextWrapping="Wrap" Width="150" Margin="0,5,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Url:" Margin="10,0,10,0"/>
+                <TextBox x:Name="tb_url" TextWrapping="Wrap" Width="150" Margin="0,5,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Termék ID:" Margin="10,0,10,0"/>
+                <TextBox x:Name="tb_termekid" TextWrapping="Wrap" Width="150" Margin="0,5,0,0"/>
+            </StackPanel>
+            <Button Content="Módosítás" Click="kep_modosit_click" Width="150" Margin="0,30,0,0" FontFamily="Candara" Background="White" BorderBrush="White"/>
+            <Button Content="Vissza" Click="vissza_click" FontFamily="Candara" Background="White" BorderBrush="White" Width="100" VerticalAlignment="Bottom" Margin="50,150,0,0"/>
+
+        </StackPanel>
+    </StackPanel>
+</Window>

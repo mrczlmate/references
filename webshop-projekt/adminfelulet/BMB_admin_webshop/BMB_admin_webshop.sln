@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMB_admin_webshop", "BMB_admin_webshop\BMB_admin_webshop.csproj", "{87416140-C90E-41FD-8895-F74EF8F530EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87416140-C90E-41FD-8895-F74EF8F530EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87416140-C90E-41FD-8895-F74EF8F530EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87416140-C90E-41FD-8895-F74EF8F530EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87416140-C90E-41FD-8895-F74EF8F530EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CDBC570-B56C-4ED7-8187-98E194FBDB14}
+	EndGlobalSection
+EndGlobal
