@@ -1,0 +1,34 @@
+﻿<Window x:Class="DAL6QM_HFT_2023241.WpfClient.Windows.CategoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DAL6QM_HFT_2023241.WpfClient.Windows"
+        xmlns:vm="clr-namespace:DAL6QM_HFT_2023241.WpfClient.ViewModels"
+        mc:Ignorable="d"
+        Title="Category Editor" Height="450" Width="800">
+    <Window.DataContext>
+        <vm:CategoryWindowViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox ItemsSource="{Binding Categories}" SelectedItem="{Binding SelectedCategory}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding CategoryName}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Grid.Column="1">
+            <Label Content="Category Name" Background="LightBlue" Padding="10" />
+            <TextBox Text="{Binding SelectedCategory.CategoryName}" Padding="10" Margin="0,0,0,30" />
+            <Button Content="Create Category" Command="{Binding CreateCategoryCommand}" Margin="10" Padding="10" />
+            <Button Content="Delete Category" Command="{Binding DeleteCategoryCommand}" Margin="10" Padding="10" />
+            <Button Content="Update Category" Command="{Binding UpdateCategoryCommand}" Margin="10" Padding="10" />
+            <Label Content="{Binding ErrorMessage}" FontSize="18" Foreground="Red" HorizontalContentAlignment="Center" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catagoly</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadAll()">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button class="nav-link" onclick="showAll()">Book Manager</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" onclick="showBook()">Books</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" onclick="showAuthor()">Authors</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" onclick="showPublisher()">Publishers</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" onclick="showCategory()">Categories</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" onclick="showStatistic()">Statistics</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <section id="author">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">Author Catalog</h1>
+                </div>
+            </div>
+            <div class="row" id="authorCreate">
+                <div class="col-12 mb-5">
+                    <h3>Create New Author:</h3>
+                    <form>
+                        <div class="mb-3">
+                          <label for="authorname" class="form-label">Author Name:</label>
+                          <input type="text" class="form-control" id="authorname" name="authorname">
+                        </div>
+                        <button type="submit" class="btn sendbtn" onclick="createAuthor()">Create Author</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row" id="authorUpdate">
+                <div class="col-12 mb-5">
+                    <h3>Update Author:</h3>
+                    <form>
+                        <div class="mb-3">
+                          <label for="authornameUpdata" class="form-label">Author Name:</label>
+                          <input type="text" class="form-control" id="authornameUpdate" name="authornameUpdate">
+                        </div>
+                        <button type="submit" class="btn sendbtn btnupdate" onclick="updateAuthor()">Update Author</button>
+                      </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>ID</th>
+                                <th>Author Name</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultauthor">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="category">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center mt-4 mb-4">Category Catalog</h1>
+                </div>
+            </div>
+            <div class="row" id="categoryCreate">
+                <div class="col-12 mb-5">
+                    <h3>Create New Category:</h3>
+                    <form>
+                        <div class="mb-3">
+                          <label for="categoryname" class="form-label">Category Name:</label>
+                          <input type="text" class="form-control" id="categoryname" name="categoryname">
+                        </div>
+                        <button type="submit" class="btn sendbtn" onclick="createCategory()">Create Category</button>
+                      </form>
+                </div>
+            </div>
+            <div class="row" id="categoryUpdate">
+                <div class="col-12 mb-5">
+                    <h3>Update Category:</h3>
+                    <form>
+                        <div class="mb-3">
+                          <label for="categorynameUpdate" class="form-label">Category Name:</label>
+                          <input type="text" class="form-control" id="categorynameUpdate" name="categorynameUpdate">
+                        </div>
+                        <button type="submit" class="btn sendbtn" onclick="updateCategory()">Update Category</button>
+                      </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>ID</th>
+                                <th>Category Name</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultcategory">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="publisher">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center mt-4 mb-4">Publisher Catalog</h1>
+                </div>
+            </div>
+            <div class="row" id="publisherCreate">
+                <div class="col-12 mb-5">
+                    <h3>Create New Publisher:</h3>
+                    <form>
+                        <div class="mb-3">
+                          <label for="publishername" class="form-label">Publisher Name:</label>
+                          <input type="text" class="form-control" id="publishername" name="publishername">
+                        </div>
+                        <button type="submit" class="btn sendbtn" onclick="createPublisher()">Create Publisher</button>
+                      </form>
+                </div>
+            </div>
+            <div class="row" id="publisherUpdate">
+                <div class="col-12 mb-5">
+                    <h3>Update Publisher:</h3>
+                    <form>
+                        <div class="mb-3">
+                          <label for="publishernameUpdate" class="form-label">Publisher Name:</label>
+                          <input type="text" class="form-control" id="publishernameUpdate" name="publishernameUpdate">
+                        </div>
+                        <button type="submit" class="btn sendbtn" onclick="updatePublisher()">Update Publisher</button>
+                      </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>ID</th>
+                                <th>Publisher Name</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultpublisher">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="book">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center mt-4 mb-4">Book Catalog</h1>
+                </div>
+            </div>
+            <div class="row" id="bookCreate">
+                <div class="col-12 mb-5">
+                    <h3>Create New Book:</h3>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                    <label for="title" class="form-label">Title:</label>
+                                    <input type="text" class="form-control" id="title" name="title">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="price" class="form-label">Price:</label>
+                            <input type="number" class="form-control" id="price" name="price" min="0" value="0">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn sendbtn" onclick="createBook()">Create Book</button>
+                      </form>
+                </div>
+            </div>
+            <div class="row" id="bookUpdate">
+                <div class="col-12 mb-5">
+                    <h3>Update Book:</h3>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                    <label for="titleUpdate" class="form-label">Title:</label>
+                                    <input type="text" class="form-control" id="titleUpdate" name="titleUpdate">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="priceUpdate" class="form-label">Price:</label>
+                            <input type="number" class="form-control" id="priceUpdate" name="priceUpdate" min="0">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn sendbtn" onclick="updateBook()">Update Book</button>
+                      </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>ID</th>
+                                <th>Title</th>
+                                <th>Price</th>
+                                <th>Author</th>
+                                <th>Publisher</th>
+                                <th>Category</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultbook">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="statistic">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">Statistics</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3>Author Statistic</h3>
+                    <table class="table table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Name</th>
+                                <th>Book Number</th>
+                                <th>Average Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultauthorstat">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12">
+                    <h3>Publisher Lowest Price Statistic</h3>
+                    <table class="table table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Publisher Name</th>
+                                <th>Lowest Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultpublisherlowbookstat">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12">
+                    <h3>Publisher Sum Price Statistic</h3>
+                    <table class="table table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Publisher Name</th>
+                                <th>Sum Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultsumbookstat">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12">
+                    <h3>Category Statistic</h3>
+                    <table class="table table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Category Name</th>
+                                <th>Book Number</th>
+                                <th>Average Price</th>
+                                <th>Min Price</th>
+                                <th>Max Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultcategorystat">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12">
+                    <h3>Order by Price Statistic</h3>
+                    <table class="table table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Publisher Name</th>
+                                <th>Category Name</th>
+                                <th>Author Name</th>
+                                <th>Title</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultorderpricestat">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
+    <script src="js/setup.js"></script>
+    <script src="js/authorscript.js"></script>
+    <script src="js/categoryscript.js"></script>
+    <script src="js/publisherscript.js"></script>    
+    <script src="js/bookscript.js"></script>
+    <script src="js/statistic.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
